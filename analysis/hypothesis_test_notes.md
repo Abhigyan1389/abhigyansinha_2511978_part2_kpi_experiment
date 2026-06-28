@@ -1,1 +1,11 @@
-
+Null hypothesis - The paid conversion rate is equal between Control and Treatment groups  (p_Control = p_Treatment)
+Alternate hypothesis - The paid conversion rate differs between Control and Treatment groups  (p_Control ≠ p_Treatment)
+Whether the test is one-tailed or two-tailed - Two-tailed — we test for any difference, not only improvement, because an unexpected drop would be equally decision-relevant
+Significance level used- α = 0.05  (5% Type I error tolerance — standard for product A/B experiments)
+Metric being tested - Paid conversion rate
+Reason for choosing that metric - Conversion rate is the most direct observable signal that the Treatment campaign is changing user behaviour in a revenue-relevant way. It measures the proportion of all acquired users who cross the payment threshold — making it the clearest single funnel metric for evaluating whether the new experience is commercially effective.
+Interpretation logic- The observed conversion rate rose from 3.19% (Control) to 7.04% (Treatment), a relative lift of +120.9%. The z-statistic of 3.264 exceeds the critical value of ±1.96 at α=0.05. The p-value of 0.0011 is below the 0.05 threshold. We reject the null hypothesis. The difference is statistically significant — the Treatment campaign produces a materially higher conversion rate than the Control.
+**Results of the A/B Test Analysis**
+The campaign is a genuinely better acquisition engine — it drives more traffic, more onboarding completions, more conversions, higher engagement, and faster time-to-pay, all at statistical significance. The revenue looks better on paper too. But a 68% spike in support tickets quietly erases the entire revenue gain once you subtract support costs, leaving net ARPU at essentially identical levels between the two groups.
+The key distinction to hold onto is the difference between the primary metric result (conversion rate doubled — this is statistically iron-clad, p = 0.0011) and the business decision (not ready to scale yet — the guardrail is breached). Those are two separate questions. The statistics confirm the campaign works. The economics say it is not yet net-positive at scale.
+The path forward is clear and not complicated: identify which onboarding steps are generating the excess support contacts, fix them, re-run the experiment, and confirm the net ARPU advantage is real before committing budget to a full rollout. Everything else about this campaign is working.
